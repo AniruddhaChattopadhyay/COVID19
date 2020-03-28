@@ -3,7 +3,7 @@ li = []
 count=0
 for a in f:
     count = count + 1
-    if(count%10 ==1 || count%10==2 || count%10 == 3):
+    if(count%10 ==1 or count%10==2 or count%10 == 3):
         continue
     li = li +  [str(a).strip('\n')]
 print(li)
