@@ -336,17 +336,17 @@ def conf_btn(nc):
             buttons=list([
                 dict(
                     args=[{'visible': [True, False, False]}],
-                    label='Line',
+                    label='Confirmed',
                     method='update'
                 ),
                 dict(
                     args=[{'visible': [False, True, False]}],
-                    label='Candle',
+                    label='Recovered',
                     method='update'
                 ),
                 dict(
                     args=[{'visible': [False, False, True]}],
-                    label='Bar',
+                    label='Deaths',
                     method='update'
                 ),
             ]),
@@ -361,9 +361,10 @@ def conf_btn(nc):
     ])
 
     layout = dict(
+        height = 800,
         title="Title",
         updatemenus=updatemenus,
-        autosize=False,
+        autosize=True,
         xaxis=dict(
             rangeselector=dict(
                 buttons=list([
